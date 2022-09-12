@@ -121,3 +121,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+# My
+DZ2.csv
+referat2.txt
+.DS_Store

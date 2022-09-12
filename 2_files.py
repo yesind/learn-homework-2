@@ -13,11 +13,12 @@ def main():
         content = f.read()
         print(f'Длиннa получившейся строки {len(content)} символов')
         print(f'Количество слов в тексте {len(content.split())}')
-        
-        new_content=content.replace(".","!")
-        new_file=open('referat2.txt', 'w')
+           
+    new_content=content.replace(".","!")
+    
+    with open('referat2.txt', 'w', encoding='utf-8') as new_file:   
         new_file.write(new_content)
-        new_file.close()
+        
 
 if __name__ == "__main__":
     main()
